@@ -1,0 +1,11 @@
+/* styling we want on every sinlge page uses the astrick */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+}

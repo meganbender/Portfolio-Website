@@ -1,0 +1,38 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 15px 7%;
+    margin-bottom: 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.2); /* light white glass */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+
+  ul {
+    flex: 1;
+    list-style: none;
+    text-align: center;
+  }
+
+  ul li {
+    display: inline-block;
+    margin: 10px 50px;
+    font-size: 24px;
+    font-family: var(--font-body);
+  }
+
+  ul li a {
+    text-decoration: none;
+    color: var(--color-lightTxt);
+    transition: color 0.2s ease;
+  }
+
+  ul li a:hover {
+    color: var(--color-devNotes);
+  }

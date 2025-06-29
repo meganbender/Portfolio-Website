@@ -1,0 +1,14 @@
+:root {
+    /* Colors */
+    --color-bg: #fff;
+    --color-display: #2655D4;
+    --color-devNotes: #574E4D;
+    --color-wireframe: rgba(87, 78, 77, 0.5);
+    --color-lightTxt: #909090;
+
+    /* Fonts */
+    --font-display: 'Aboreto', georgia, serif;
+    --font-header: 'Hanken Grotesk', 'helvetica neue', 'sans-serif';
+    --font-body: 'Inter', system-ui, 'sans-serif';
+    --font-small: 'Patrick Hand', monospace, 'cursive';
+}

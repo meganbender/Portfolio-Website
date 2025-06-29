@@ -1,0 +1,77 @@
+.heroContainer {
+    position: relative;
+    width: 100%;
+    /* height: 100vh; */
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 3rem; */
+    justify-content: center;
+}
+
+.layerStack {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Z-Stack styling */
+.portfolioAbove {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.imgTextContainer {
+    position: relative;
+    /* bottom: 20%; */
+    /* transform: translateX(-50%); */
+    z-index: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 2rem;
+    /* margin-left: 2rem; */
+    margin-top: -250px;
+    /* flex-wrap: wrap; */
+    /* padding: 1rem 0; */
+    /* top: 40%; */
+}
+
+.portfolioBelow {
+    position: relative;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Portfolio styling*/
+.heroTitle {
+    font-family: var(--font-display);
+    font-size: 160px; /* 7.5% of the viewport width */
+    font-weight: 300;
+    letter-spacing: 0.25em;/* space between letters about 20 percent i hope*/
+    color: var(--color-display);
+    line-height: .8;
+}
+
+/* Image and text description styling */
+.heroSubtitle {
+    font-family: var(--font-header);
+    font-size: 4rem;
+    position: relative;
+    text-align: right;
+    max-width: 600px;
+}
+
+.image {
+    width: 650px;
+    height: auto;
+    /* display: block; */
+    object-fit: cover;
+    /* z-index: 1; */
+}
