@@ -23,7 +23,8 @@ export const Navbar = () => {
     <div className={styles.navbar}>
       <ul>
         <li><a href="#about" onClick={handleAboutClick}>about</a></li>
-        <li><NavLink to="/projects" activeClassName={styles.active}>projects</NavLink></li>
+        {/* this is the old way: <li><NavLink to="/projects" activeClassName={styles.active}>projects</NavLink></li> */}
+        <li><NavLink to="/projects" className={({ isActive }) => isActive ? styles.active : ''}>projects</NavLink></li>
         <li><a href="#contact">contact</a></li>
         <li><a href="/MeganBender_TechResume_05.29.2025.pdf" download>resume</a></li>
       </ul>

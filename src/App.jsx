@@ -5,13 +5,16 @@ import { Navbar } from './components/Navbar/Nav';
 import { About } from './components/About/About';
 import { Contact } from './components/Contact/Contact';
 import { Projects } from './components/Projects/Projects';
+import { ProjContent } from './components/ProjContent/ProjContent';
 import WireframeBase from './components/WireframeBox/WireframeBox';
+import { ScrollToTop } from './components/ScrollToTop/ScrollToTop';
 
 function App() {
   return (
     <Router>
       <div className="addWrapper">
         <WireframeBase>
+          <ScrollToTop/>
           <Routes>
 
             {/* Home Page */}
@@ -27,8 +30,9 @@ function App() {
             {/* Projects Page */}
             <Route path="/projects" element={
               <>
-                <Navbar/>
                 <Projects/>
+                <Navbar/>
+                <ProjContent/>
                 <Contact/>
               </>
             } />
